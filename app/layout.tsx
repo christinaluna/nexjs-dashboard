@@ -1,13 +1,13 @@
 import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import { lato } from '@/app/ui/fonts';
 import { Metadata } from 'next';
  
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Ledgerly Dashboard',
+    default: 'Ledgerly Dashboard',
   },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
+  description: 'Ledgerly is a user-friendly billing application designed to simplify invoicing, payment tracking, and financial management. Streamline your billing processes and enhance efficiency with real-time updates and seamless integrations. Perfect for businesses of all sizes.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${lato.className} antialiased`}>{children}</body>
     </html>
   );
 }
